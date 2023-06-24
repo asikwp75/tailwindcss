@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template kit</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body >
+
+    <!-- Section: Design Block -->
+<section class="background-radial-gradient overflow-hidden h-screen">
+    <style>
+      .background-radial-gradient {
+        background-color: hsl(218, 41%, 15%);
+        background-image: radial-gradient(650px circle at 0% 0%,
+            #354f7e 15%,
+            #2d446c 35%,
+            #1e2d48 75%,
+            #1d2b44 80%,
+            transparent 100%),
+          radial-gradient(1250px circle at 100% 100%,
+            #4466a2 15%,
+            #2d446c 35%,
+            #1e2d48 75%,
+            #1d2b44 80%,
+            transparent 100%);
+      }
+  
+      #radius-shape-1 {
+        height: 220px;
+        width: 220px;
+        top: -60px;
+        left: -130px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+      }
+  
+      #radius-shape-2 {
+        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+        bottom: -60px;
+        right: -110px;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+      }
+    </style>
+
+      <div class="w-100 flex items-center justify-center h-full mx-auto text-neutral-800 sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
+        <div class="grid items-center gap-12 lg:grid-cols-2">
+          <div class="mt-12 lg:mt-0" style="z-index: 10">
+            <h1
+              class="mt-0 mb-12 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl text-[hsl(218,81%,95%)]">
+              The best offer <br /><span class="text-[hsl(218,81%,75%)]">for your business</span>
+            </h1>
+            <p class="opacity-70 text-[hsl(218,81%,85%)]">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Temporibus, expedita iusto veniam atque, magni tempora
+              mollitia dolorum consequatur nulla, neque debitis eos
+              reprehenderit quasi ab ipsum nisi dolorem modi. Quos?
+            </p>
+          </div>
+          <div class="relative mb-12 lg:mb-0">
+            <div id="radius-shape-1" class="absolute rounded-full shadow-lg"></div>
+            <div id="radius-shape-2" class="absolute shadow-lg"></div>
+            <div class="relative bg-[hsla(0,0%,100%,0.9)] backdrop-blur-[25px] backdrop-saturate-[200%] block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,15%,0.9)] dark:shadow-black/20 md:px-12">
+              <form>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="grid-first-name">
+                        First Name
+                      </label>
+                      <input class="appearance-none block w-full bg-transparent text-gray-300 placeholder:text-gray-400 text-sm border border-gray-600 rounded py-3 px-4 mb-3 leading-tight outline-none focus:border-blue-500"  id="grid-first-name" type="text" placeholder="Jane">
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                      <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="grid-last-name">
+                        Last Name
+                      </label>
+                      <input class="appearance-none block w-full bg-transparent text-gray-300 placeholder:text-gray-400 text-sm border border-gray-600 rounded py-3 px-4 mb-3 leading-tight outline-none focus:border-blue-500" id="grid-last-name" type="text" placeholder="Doe">
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3">
+                      <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="grid-password">
+                        Password
+                      </label>
+                      <input class="appearance-none block w-full bg-transparent text-gray-300 placeholder:text-gray-400 text-sm border border-gray-600 rounded py-3 px-4 mb-3 leading-tight outline-none focus:border-blue-500" id="grid-password" type="password" placeholder="******************">
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap -mx-3 mb-2">
+                    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                      <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="grid-city">
+                        City
+                      </label>
+                      <input class="appearance-none block w-full bg-transparent text-gray-300 placeholder:text-gray-400 text-sm border border-gray-600 rounded py-3 px-4 mb-3 leading-tight outline-none focus:border-blue-500" id="grid-city" type="text" placeholder="Albuquerque">
+                    </div>
+                    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                      <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="grid-state">
+                        State
+                      </label>
+                      <div class="relative">
+                        <select class="appearance-none block w-full bg-transparent text-gray-300 placeholder:text-gray-400 text-sm border border-gray-600 rounded py-3 px-4 mb-3 leading-tight outline-none focus:border-blue-500" id="grid-state">
+                          <option>New Mexico</option>
+                          <option>Missouri</option>
+                          <option>Texas</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                      <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="grid-zip">
+                        Zip
+                      </label>
+                      <input class="appearance-none block w-full bg-transparent text-gray-300 placeholder:text-gray-400 text-sm border border-gray-600 rounded py-3 px-4 mb-3 leading-tight outline-none focus:border-blue-500" id="grid-zip" type="text" placeholder="90210">
+                    </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+</body>
+
+</html>
